@@ -99,6 +99,7 @@ jobs:
           if curl -sf http://localhost:5000/health; then
           echo "Attempt $i failed, retrying..."
           sleep 2
+          fi
         done
 
     - name: Validate /ping endpoint
